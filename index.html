@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con sello colombiano</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Aqui va la cabecera -->
+    <header>
+        <img src="imagnes/logo.webp" alt="Logo sitio" class="logo">
+        
+        <h1> Con Sello Colombiano</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+
+     <!-- Submenu lugares -->
+      <li class="submenu">
+        <a href="#">Lugares</a>
+        <ul class="dropdown">
+            <li><a href="#cartagena">Cartagena</a></li>
+            <li><a href="#medellin">Medellin</a></li>
+            <li><a href="#sanandres">San Andres</a></li>
+            <li><a href="#tayrona">Tayrona</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#informacion">Informacion</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+
+        <select id="idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+
+        <p id="mensaje-bienvenida"></p>
+    </header>
+
+    <!-- slider imagenes-->
+     <section id="inicio" class="slider">
+        <div class="slides">
+            <img src="imagnes/paisaje.webp" class="slide active">
+            <img src="imagnes/san andres.webp" class="slide">
+            <img src="imagnes/tayrona.webp" class="slide">
+        </div>    
+
+        <button id="prev" class="slider-btn"><</button>
+        <button id="next" class="slider-btn">></button>
+     </section>
+
+    <!--Seleccion lugares-->
+    <section id="lugares" class="contenedor-lugares">
+
+        <h2>Lugares para visitar</h2>
+
+    <!-- Cartagena -->
+        <div class="lugar" id="cartagena">
+            <img src="imagnes/cartagena.webp" alt="Vista de las murallas de Cartagena al atardecer">
+            <h3>Cartagena</h3>
+            <p>Ciudad amurallada, historia, playas y atardeceres magicos.</p>
+
+        <!-- Boton de ver mas -->
+            <button class="btn-ver-mas" data-destino="cartagena.html">Ver mas</button>
+            <div class="info-adicional">
+                <p>Cartagena de Indias en uno de los destinos mas visitados de Colombia. Su centro historico, declarado Patrimonio de la Humanidad, conserva la magia de la epoca colonial.</p>
+            </div>
+        </div>
+
+        <!-- Medellin -->
+        <div class="lugar" id="medellin">
+            <img src="imagnes/medellin.webp" alt="Vista panoramica de Medellin con montañas">
+            <h3>Medellin</h3>
+            <p>Moderna, rodeada de montañas y flores.</p>
+
+        
+            <button class="btn-ver-mas" data-destino="medellin.html">Ver mas</button>
+            <div class="info-adicional">
+                <p>Conocida como la Ciudad de la Eterna Primavera, Medellin combina innovacion, cultura y naturaleza en cada rincon.</p>
+            </div>
+        </div>
+
+        <!-- San Andres -->
+        <div class="lugar" id="sanandres">
+            <img src="imagnes/sanandres.webp" alt="Playa de arena blanca en San Andres">
+            <h3>San Andres</h3>
+            <p>El mar de los 7 colores te espera con sus aguas cristalinas.</p>
+
+            <button class="btn-ver-mas" data-destino="sanandres.html">Ver mas</button>
+            <div class="info-adicional">
+                <p>Un paraiso caribeño con playas blancas, arrecifes de coral y una cultura isleña vibrante.</p>
+            </div>
+        </div>
+
+        <!-- Parque Tayrona -->
+        <div class="lugar" id="tayrona">
+            <img src="imagnes/tayrona.webp" alt="Vistas del Parque Tayrona con playa y selva">
+            <h3>Parque Tayrona</h3>
+            <p>Selva y playa en un solo lugar.</p>
+
+            <button class="btn-ver-mas" data-destino="tayrona.html">Ver mas</button>
+            <div class="info-adicional">
+                <p>Ubicado en la Sierra Nevada de Santa Marta, el Tayrona ofrece un contacto directo con la naturaleza y la cultura ancestral.</p>
+            </div>
+        </div>
+</section>
+
+    <!-- Seccion informacion-->
+     <section id="informacion">
+        <h2>Informacion util de Colombia</h2>
+        <p>Encuentra aqui recomendaciones, tips y mas.</p>
+
+        <div class="info-container">
+            
+            <!-- Medios de transporte -->
+             <div class="info-card">
+                <img src="imagnes/transporte.webp">
+                <h3>Medios de Transporte</h3>
+                <p>En Colombia puedes viajar en bus, taxi, avion, metro (en Medellin) y sistemas de transporte masivo.</p>
+             </div>
+
+             <!-- Moneda -->
+              <div class="info-card">
+                <img src="imagnes/moneda.webp" alt="Moneda de Colombia">
+                <h3>Moneda y pagos</h3>
+                <p>La moneda oficial es el Peso Colombiano (COP). Se aceptan tarjetas, efectivo y plataformas digitales.</p>
+              </div>
+
+             <!-- Clima -->
+              <div class="info-card">
+                <img src="imagnes/clima.webp" alt="Clima de Colombia">
+                <h3>Clima</h3>
+                <p>Colombia tiene clima tropical variado: calido en la costa y frio en zonas de montaña como Bogota.</p>
+              </div>
+
+              <!-- Cultura-->
+               <div class="info-card">
+                <img src="imagnes/cultura.webp" alt="Cultura colombiana">
+                <h3>Cultura</h3>
+                <p>Cololmbia es un pais diverso, lleno de tradiciones, musica, gastronomia y festivales reconocidos muldialmente.</p>
+               </div>
+
+        </div>
+     </section>
+
+     <!-- Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escribenos para mas informacion.</p>
+      </section>
+    
+    <!--Pie de pagina-->
+    <footer>
+        <p>&copy; 2025 Con Sello Colombiano / Todos los derechos reservados</p>
+    </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
